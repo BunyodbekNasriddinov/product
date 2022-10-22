@@ -6,7 +6,6 @@ const elImg = document.querySelector(".logo-link__pic");
 
 elDarkBtn.addEventListener("click", () => {
   elBody.classList.toggle("dark");
-  elBody.classList.toggle("login-mode");
   elLogo.classList.toggle("logo");
   elImg.style.display = "none";
 });
