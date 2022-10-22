@@ -25,7 +25,7 @@
   scroll-behavior: smooth;
   transition: all 0.3s ease;
 }
-
+ 
 body {
   margin: 0;
   font-family: "Arial", sans-serif;
@@ -200,6 +200,10 @@ img {
   background-position: center bottom;
 }
 
+.product__content {
+  padding-bottom: 90px;
+}
+
 .product__title-div {
   width: 480px;
   margin: 0 auto;
@@ -286,7 +290,8 @@ img {
 }
 
 .product__link {
-  display: inline-block;
+  width: 180px;
+  display: block;
   margin: 35px auto 90px;
   padding: 15px 33px;
   text-transform: uppercase;
@@ -549,7 +554,8 @@ img {
 }
 
 .process__link {
-  display: inline-block;
+  width: 216px;
+  display: block;
   margin: 48px auto 0;
   padding: 15px 30px;
   font-weight: 700;
