@@ -835,3 +835,170 @@ img {
   color: #02897a;
   background-color: #fff;
 }
+
+/* MESSAGE START */
+.message {
+  padding: 150px 0 0;
+}
+
+.message__inner {
+}
+
+.message__texts {
+  width: 537px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.message__title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  color: var(--main-text-color);
+}
+
+.message__desc {
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: var(--main-text-color);
+}
+
+.message__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.message__item {
+  width: 327px;
+  padding: 26px;
+  background-color: #ffffff;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+}
+
+.message__stars {
+  margin: 28px 0 0;
+}
+
+.message__star {
+  width: 19px;
+  height: 19px;
+  display: inline-block;
+  background-image: url("../images/star.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.painted {
+  display: inline-block;
+  background-image: url("../images/star-painted.svg");
+}
+
+.message__comment {
+  margin: 16px 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
+.message__user {
+  display: flex;
+  align-items: center;
+}
+
+.message__user-pic {
+  border: 1px solid #bdbdbd;
+  border-radius: 50%;
+}
+
+.message__user-info {
+  margin-left: 14px;
+}
+
+.message__user-name {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #02897a;
+}
+
+.message__user-job {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #252b42;
+}
+
+/* STATUS START */
+.status {
+  padding: 150px 0 0;
+}
+
+.status__inner {
+  width: 968px;
+  margin: 0 auto;
+  padding: 55px 50px;
+  background-color: #02897a;
+  border-radius: 32px;
+  background-image: url("../images/status-bgi.png");
+  background-repeat: no-repeat;
+  background-position: top 14px right 36px;
+}
+
+.status__texts {
+  width: 510px;
+}
+
+.status__title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 151.4%;
+  color: #ffffff;
+}
+
+.status__link {
+  padding: 13px 34px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #02897a;
+  background-color: #ffffff;
+}
+
+/* FOOTER START */
+.site-footer {
+  padding: 150px 0 0;
+}
+
+.footer__inner {
+  
+}
+
+.footer__logo-link {
+
+}
+
+.footer__so
+
+@media {
+  (-webkit-min-device-pixel-ratio: 2), 
+  (min-resolution: 192dpi) { 
+  .status__inner {
+    background-image: url("../images/status-bgi@2x.png");
+  }
+}
