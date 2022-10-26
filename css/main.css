@@ -512,7 +512,7 @@ img {
   padding: 150px 0 0;
   background-image: url("../images/process-bgi.png");
   background-repeat: no-repeat;
-  background-position: top 152px center;
+  background-position: top 152px   center;
 }
 
 .process-dark {
@@ -985,7 +985,7 @@ img {
 
 /* FOOTER START */
 .site-footer {
-  padding: 150px 0 0;
+  padding: 150px 0 45px;
 }
 
 .footer__inner {
