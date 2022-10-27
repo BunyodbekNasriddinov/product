@@ -1,0 +1,347 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Bold.woff2") format("woff2"),
+    url("fonts/Poppins-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Medium.woff2") format("woff2"),
+    url("../fonts/Poppins-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.woff2") format("woff2"),
+    url("../fonts/Poppins-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-SemiBold.woff2") format("woff2"),
+    url("../fonts/Poppins-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --main-bg-color: #fff;
+  --main-text-color: #22343d;
+  --border-color: #e7e7e7;
+}
+
+.dark {
+  --main-bg-color: #1f2e35;
+  --main-text-color: #fff;
+  --border-color: #474747;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+}
+
+main {
+  flex-grow: 1;
+}
+
+img {
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+.container {
+  width: 1150px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.main-btn {
+  padding: 10px 24px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  background-color: #02897a;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.pricing {
+  padding: 50px 0 0;
+}
+
+.price__title {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--main-text-color);
+}
+
+.pricing__text-1 {
+  margin: 32px 0 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  color: #22343d;
+}
+
+.pricing__text-2 {
+  margin: 16px 0 50px;
+  padding: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #22343d;
+}
+
+/* PLAN START */
+.plan {
+  padding: 150px 0 50px;
+}
+
+.plan__texts {
+  width: 802px;
+  margin: 53px auto 0;
+  text-align: center;
+}
+
+.plan__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--main-text-color);
+}
+
+.plan__text-1 {
+  margin: 16px 0 0;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 51px;
+  color: var(--main-text-color);
+}
+
+.plan__text-2 {
+  margin: 8px 0 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #22343d;
+}
+
+.plan__link {
+  width: 224px;
+  display: block;
+  margin: 32px auto;
+  padding: 11px 18px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+/* EFFECT START */
+.effect {
+  padding: 150px 0 0;
+}
+
+.effect__title {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 51px;
+  color: var(--main-text-color);
+  text-align: center;
+}
+
+.effect__content {
+  margin: 55px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.effect__list {
+  width: 550px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.effect__item-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  color: var(--main-text-color);
+}
+
+.effect__item-text {
+  margin: 23px 0 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--main-text-color);
+}
+
+.enterpreneur::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin-right: 14px;
+  background-image: url("../../images/enterpreneur.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.accauntants::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin-right: 14px;
+  background-image: url("../../images/accauntans.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.universities::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin-right: 14px;
+  background-image: url("../../images/universities.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* QUESTIONS START */
+.questions {
+  padding: 150px 0 0;
+}
+
+.questions__title {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 51px;
+  color: var(--main-text-color);
+  text-align: center;
+}
+
+.questions__desc {
+  margin: 8px 0 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--main-text-color);
+  text-align: center;
+}
+
+.questions__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.questions__item {
+  padding: 22px 0;
+  border-bottom: 1px solid transparent;
+  border-color: var(--border-color);
+}
+
+.questions__item::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  margin-right: 16px;
+  background-image: url("../../images/plus-circle.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.questions__label {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--main-text-color);
+  cursor: pointer;
+}
+
+
+.input-btn {
+  display: none;
+}
+
+.questions__text {
+  display: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--main-text-color);
+}
+
+.input-btn:checked ~ .questions__item::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  margin-right: 16px;
+  background-image: url("../../images/minus-circle.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.input-btn:checked ~ .questions__text {
+  display: block;
+}

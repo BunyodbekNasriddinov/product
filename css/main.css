@@ -1,13 +1,42 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Bold.woff2") format("woff2"),
+    url("fonts/Poppins-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Medium.woff2") format("woff2"),
+    url("../fonts/Poppins-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.woff2") format("woff2"),
+    url("../fonts/Poppins-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-SemiBold.woff2") format("woff2"),
+    url("../fonts/Poppins-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --main-bg-color: #fff;
   --main-text-color: #22343d;
-  --main-liner-gradient: linear-gradient(
-    179.59deg,
-    #ededed 0.35%,
-    rgba(255, 255, 255, 0.0001) 99.63%
-  );
-  /* --main-dark-bg-color: #1f2e35;
-  --main-dark-text-color: #fff; */
 }
 
 .dark {
@@ -64,7 +93,6 @@ img {
 }
 
 .main-btn {
-  margin: 0;
   padding: 10px 24px;
   font-weight: 600;
   font-size: 16px;
@@ -512,7 +540,7 @@ img {
   padding: 150px 0 0;
   background-image: url("../images/process-bgi.png");
   background-repeat: no-repeat;
-  background-position: top 152px   center;
+  background-position: top 152px center;
 }
 
 .process-dark {
@@ -1089,7 +1117,12 @@ img {
   text-align: center;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
   .hero__inner {
     background-image: url("../images/hero-bgi@2x.png");
   }
