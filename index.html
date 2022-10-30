@@ -4,56 +4,69 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/nomalize.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <title>Product</title>
   </head>
-
   <body>
     <header class="site-header">
       <div class="container">
         <div class="site-header__inner">
-          <a class="logo-link" href="./index.html">
+          <a class="logo" href="./index.html">
             <img
-              class="logo-link__pic"
+              class="logo__img"
               src="./images/logo.svg"
               alt="Site logo"
-              width="163"
+              width="162"
               height="30"
             />
           </a>
-          <nav class="site-header__navbar">
-            <ul class="site-header__list">
-              <li class="site-header__item">
-                <a class="site-header__link active-link" href="./index.html"
-                  >Product</a
-                >
+          <nav class="navbar">
+            <ul class="navbar__list">
+              <li class="navbar__item">
+                <a class="navbar__link navbar__link--active" href="#">
+                  Product
+                </a>
               </li>
-              <li class="site-header__item">
-                <a class="site-header__link" href="#">Customers</a>
+              <li class="navbar__item">
+                <a class="navbar__link" href="#"> Customers </a>
               </li>
-              <li class="site-header__item">
-                <a class="site-header__link" href="./pricing/index.html"
-                  >Pricing</a
-                >
+              <li class="navbar__item">
+                <a class="navbar__link" href="#"> Pricing </a>
               </li>
-              <li class="site-header__item">
-                <a class="site-header__link" href="#">Resources</a>
+              <li class="navbar__item">
+                <a class="navbar__link" href="#"> Resources </a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link main-btn login-btn" href="#">
+                  Sign In
+                </a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link main-btn regiter-btn" href="#">
+                  Sign Up
+                </a>
+              </li>
+              <li class="navbar__item">
+                <button class="mode-btn">
+                  <img
+                    src="./images/mode-logo.svg"
+                    alt="Mode button"
+                    width="32"
+                    height="32"
+                  />
+                </button>
               </li>
             </ul>
           </nav>
-          <div class="site-header__authorized">
-            <button class="login main-btn" type="button">Sign In</button>
-            <button class="register main-btn" type="button">Sign Up</button>
-            <button class="mode">
-              <img
-                class="mode__pic"
-                src="./images/mode-logo.svg"
-                alt="night mode logo"
-                width="23"
-                height="32"
-              />
-            </button>
-          </div>
+          <button class="menu-btn">
+            <img
+              src="./images/menu.svg"
+              alt="Menu button"
+              width="28"
+              height="31"
+            />
+          </button>
         </div>
       </div>
     </header>
@@ -146,14 +159,6 @@
       <section class="customer">
         <div class="container">
           <div class="customer__inner">
-            <img
-              class="customer__bgi"
-              srcset="../images/laptop.png, ../images/laptop@2x.png"
-              src="./images/laptop.png"
-              alt="Laptop image"
-              width="543"
-              height="500"
-            />
             <div class="customer__content">
               <small class="small"> Easier decision making for </small>
               <h2 class="customer__title">Customer Support</h2>
