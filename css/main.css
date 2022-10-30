@@ -217,7 +217,7 @@ body {
 
 .hero__inner {
   padding: 145px 0 220px;
-  background-image: var(--main-bg-hero);
+  background-image: url("../images/hero-bgi.png");
   background-repeat: no-repeat;
   background-position: top 45px right;
 }
@@ -506,7 +506,7 @@ body {
 }
 
 .managemant__inner {
-  background-image: var(--main-bg-managemant);
+  background-image: url("../images/images-folder-img.png");
   background-repeat: no-repeat;
   background-position: top 150px right;
 }
@@ -602,7 +602,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding-bottom: 120px;
-  background-image: url("../images/");
+  background-image: url("../images/laptop.png");
   background-repeat: no-repeat;
   background-position: top left;
 }

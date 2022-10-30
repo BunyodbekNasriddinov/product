@@ -106,6 +106,13 @@ img {
   text-decoration: none;
 }
 
+.login-btn {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  border: 1px solid #bcd0e5;
+  border-radius: 4px;
+}
+
 .pricing {
   padding: 50px 0 0;
 }
@@ -131,7 +138,7 @@ img {
   font-size: 40px;
   line-height: 60px;
   text-align: center;
-  color: #22343d;
+  color: var(--main-text-color);
 }
 
 .pricing__text-2 {
@@ -140,7 +147,7 @@ img {
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-  color: #22343d;
+  color: var(--main-text-color);
 }
 
 /* PLAN START */
