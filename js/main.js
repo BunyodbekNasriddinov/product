@@ -8,8 +8,10 @@ var processSection = document.querySelector(".process");
 
 elDarkBtn.addEventListener("click", () => {
   elBody.classList.toggle("dark");
-  elImg.src = "../images/site-logo-mode.svg";
-  elFooterImg.src = "../images/site-logo-mode.svg";
+
+  if (elBody.classList[0] === 'dark') {
+    elImg.src = "../images/site-logo-mode.svg";
+  }
 });
 
-console.log(elImg.src);
+// console.log();
