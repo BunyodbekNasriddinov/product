@@ -131,12 +131,17 @@ body {
 }
 
 .site-header__inner {
+  position: relative;
   display: flex;
   align-items: center;
 }
 
 .navbar {
   margin-left: auto;
+}
+
+.navbar-mobile {
+  flex-direction: column;
 }
 
 .navbar__list {
@@ -204,6 +209,13 @@ body {
   .menu-btn {
     display: block;
     margin-left: auto;
+  }
+  .login-btn {
+    display: none;
+  }
+
+  .regiter-btn {
+    display: none;
   }
 }
 

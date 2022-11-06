@@ -167,9 +167,9 @@ img {
   }
 }
 
-/*************/
-/***PRODUCT***/
-/*************/
+/***************************/
+/*****     PRODUCT     *****/
+/***************************/
 .product {
   margin: 77px 0 0;
   background-color: var(--main-bg-color);
@@ -202,6 +202,10 @@ img {
   margin-bottom: 32px;
 }
 
+.time::before {
+  background-image: url("../images/fastest.svg");
+}
+
 .product__text-inner {
   width: 100%;
   max-width: 275px;
@@ -211,15 +215,15 @@ img {
   margin: 16px 0 0;
 }
 
-/************/
-/***MOBILE***/
-/************/
+/******************/
+/***   MOBILE   ***/
+/******************/
 
 @media only screen and (min-width: 1024px) {
   .product__title {
     margin-bottom: 0px;
   }
-  
+
   .product__list {
     margin-top: 50px;
   }
@@ -230,7 +234,7 @@ img {
 
   .product__item + .product__item {
     margin-top: 0px;
-}
+  }
 
   .product__name {
     text-align: center;
@@ -241,6 +245,204 @@ img {
   }
 }
 
-@media only screen and (max-width: 450px) {
+/*******************************/
+/*****     PRODUCT END     *****/
+/*******************************/
 
+/*************************/
+/*****     STEPS     *****/
+/*************************/
+.steps {
+  padding: 96px 0 70px;
 }
+
+.steps__title {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  color: var(--main-text-color);
+}
+
+.steps__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 70px 0 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+.steps__item {
+  width: 100%;
+  max-width: 355px;
+}
+
+.steps__item + .steps__item {
+  margin-top: 65px;
+}
+
+.steps__number {
+  display: block;
+  margin: 0 0 16px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: left;
+  color: #22343d;
+}
+
+.steps__pic {
+  width: 100%;
+  max-width: 349px;
+  max-width: 195px;
+  margin: 0 0 80px;
+}
+
+.steps__name {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #22343d;
+  text-align: left;
+}
+
+.steps__text {
+  margin: 16px 0 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #22343d;
+  text-align: left;
+}
+
+.steps__link {
+  display: none;
+}
+
+/******************/
+/***   DESKTOP  ***/
+/******************/
+
+@media only screen and (min-width: 1024px) {
+  .steps {
+    padding: 100px 0 0;
+  }
+
+  .steps__list {
+    max-width: 1026px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .steps__item {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1026px;
+  }
+
+  .steps__item + .steps__item {
+    margin-top: 100px;
+  }
+
+  .steps__item:nth-child(2n + 0) {
+    flex-direction: row-reverse;
+  }
+
+  .steps__pic {
+    max-width: 500px;
+    max-height: 280px;
+  }
+
+  .steps__link {
+    display: block;
+    width: 100%;
+    max-width: 225px;
+    margin: 77px auto 0;
+    text-align: center;
+  }
+}
+
+/*****************************/
+/*****     STEPS END     *****/
+/*****************************/
+
+/**************************/
+/*****     OFFERS     *****/
+/**************************/
+.offers {
+  padding: 30px 0;
+  background-color: #f5f5f5;
+}
+
+.offers__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  color: #22343d;
+}
+
+.offers__list {
+  margin: 85px auto 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+.offers__item {
+  margin: 0 auto;
+}
+
+.offers__item::before {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 35px;
+  background-repeat: no-repeat;
+}
+
+.buisness::before {
+  background-image: url("../images/offers-business.svg");
+}
+
+.enterprice::before {
+  background-image: url("../images/offers-enterprice.svg");
+}
+
+.offers__sublist {
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+.offers__name {
+  margin: 0 0 16px;
+  padding: 0;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.offers__subtext {
+  margin: 8px 0 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: #22343d;
+}
+
+/******************************/
+/*****     OFFERS END     *****/
+/******************************/
