@@ -68,7 +68,6 @@ html {
 *::after,
 *::before {
   box-sizing: border-box;
-  transition: all 0.3s ease;
 }
 
 body {
@@ -106,7 +105,7 @@ img {
   width: 100%;
   max-width: 1150px;
   margin: 0 auto;
-  padding: 0 19px;
+  padding: 0 20px;
 }
 
 /*******************************/
@@ -128,6 +127,7 @@ body {
   width: 100%;
   background-color: var(--main-bg-color);
   box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
 }
 
 .site-header__inner {
@@ -218,6 +218,7 @@ body {
 .hero__inner {
   padding: 145px 0 220px;
   background-image: url("../images/hero-bgi.png");
+  /* background-size: 100%; */
   background-repeat: no-repeat;
   background-position: top 45px right;
 }
@@ -225,6 +226,7 @@ body {
 .hero__content {
   width: 100%;
   max-width: 450px;
+  margin: 0 auto;
 }
 
 .hero__title {
@@ -246,6 +248,8 @@ body {
 
 .hero__links {
   margin: 45px 0 0;
+  display: flex;
+  align-items: center;
 }
 
 .hero__link {
@@ -265,8 +269,7 @@ body {
 .hero__play-link::before {
   display: inline-block;
   content: "";
-  width: 100%;
-  max-width: 20px;
+  width: 20px;
   height: 20px;
   margin: 0 9px 0;
   background-image: url("../images/play-icon.svg");
@@ -278,6 +281,10 @@ body {
 /*******************************/
 
 @media only screen and (max-width: 576px) {
+  .hero {
+    padding: 30px 0 0;
+  }
+
   .hero__inner {
     padding: 350px 0 115px;
     background-position: top center;
@@ -292,11 +299,27 @@ body {
   .hero__text {
     text-align: center;
   }
+
+  .hero__links {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .hero__inner {
+    background-position: top center;
+    background-size: 100% 310px;
+  }
+
+  .hero__title {
+    font-size: 32px;
+  }
 }
 
 @media only screen and (max-width: 365px) {
   .hero__inner {
     background-size: 100%;
+    overflow: hidden;
   }
 
   .hero__title {
@@ -312,7 +335,6 @@ body {
 
   .hero__play-link {
     font-size: 14px;
-    margin-left: 10px;
   }
 }
 
@@ -565,8 +587,9 @@ body {
   }
 
   .managemant__inner {
-    background-size: 330px 306px;
+    background-size: 100% 306px;
     background-position: top 95px center;
+    overflow: hidden;
   }
 
   .managemant__content {
@@ -580,8 +603,8 @@ body {
 
 @media only screen and (max-width: 365px) {
   .managemant__inner {
-    background-size: 100%;
     background-position: top 95px center;
+    overflow: hidden;
   }
 }
 
@@ -708,20 +731,14 @@ body {
   .customer__inner {
     display: block;
     padding-top: 100px;
-    background-size: 325px 320px;
+    background-size: 100% 320px;
   }
 
   .customer__content {
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     padding-top: 405px;
     transform: none;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  .customer__inner {
-    display: block;
-    background-size: 100%;
   }
 }
 /*******************************/
@@ -799,6 +816,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 410px) {
+  .collobrate__inner {
+    background-size: 100% 250px;
+  }
+}
+
 /*******************************/
 /*****   COLLOBRATE END    *****/
 /*******************************/
@@ -870,7 +893,7 @@ body {
   flex-direction: row-reverse;
 }
 
-.process__subtext ~ .process__subtext {
+.process__subtext + .process__subtext {
   padding: 15px 24px;
 }
 
@@ -906,6 +929,37 @@ body {
   .process__item + .process__item {
     display: block;
     margin: 0;
+  }
+
+  .process__sublist {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .row-responsive {
+    flex-direction: row;
+  }
+
+  .row-reverse-responsive {
+    flex-direction: row-reverse;
+  }
+
+  .process__subimg {
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+  .process__subtext {
+    max-width: 237px;
+    max-height: 65px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .process__subitem {
+    flex-wrap: wrap;
   }
 }
 
@@ -948,7 +1002,7 @@ body {
 }
 
 .content__item {
-  width: 1005px;
+  width: 100%;
   max-width: 348px;
   background: #ffffff;
   border: 1px solid #ddd;
@@ -1036,11 +1090,29 @@ body {
   }
 
   .content__item {
-    margin: 0 auto 16px;
+    position: relative;
+    margin-top: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 200px;
+  }
+
+  .content__item + .content__item {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .content__pic {
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 348px;
+    height: 185px;
   }
 
   .content__controller {
-    margin: 0 auto;
+    display: none;
   }
 }
 
@@ -1222,6 +1294,7 @@ body {
 
   .price__list {
     display: block;
+    padding: 0;
   }
 
   .price__item {
@@ -1419,6 +1492,7 @@ body {
     padding-bottom: 350px;
     background-position: bottom center;
     background-size: 351px 331px;
+    overflow: hidden;
   }
 
   .status__title {

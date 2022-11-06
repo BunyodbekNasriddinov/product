@@ -1,3 +1,11 @@
 {
-    "html-to-css-autocompletion.triggerCharacters": true
+  "html-to-css-autocompletion.triggerCharacters": true,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "css",
+      "savePathReplacementPairs": null
+    }
+  ]
 }
