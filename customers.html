@@ -1,243 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/nomalize.css" />
-  <link rel="stylesheet" href="./css/main.css" />
-  <!-- <link rel="stylesheet" href="./css/min.main.css"> -->
-  <title>Product</title>
-</head>
-<body>
-  <header class="site-header">
-    <div class="container">
-      <div class="site-header__inner">
-        <a class="logo" href="./index.html">
-          <img
-            class="logo__img"
-            src="./images/logo.svg"
-            alt="Site logo"
-            width="162"
-            height="30"
-          />
-        </a>
-        <nav class="navbar">
-          <ul class="navbar__list">
-            <li class="navbar__item">
-              <a class="navbar__link" href="./index.html">
-                Product
-              </a>
-            </li>
-            <li class="navbar__item">
-              <a class="navbar__link navbar__link--active" href="#"> Customers </a>
-            </li>
-            <li class="navbar__item">
-              <a class="navbar__link" href="./pricing.html"> Pricing </a>
-            </li>
-            <li class="navbar__item">
-              <a class="navbar__link" href="#"> Resources </a>
-            </li>
-            <li class="navbar__item">
-              <a class="navbar__link main-btn login-btn" href="#">
-                Sign In
-              </a>
-            </li>
-            <li class="navbar__item">
-              <a class="navbar__link main-btn regiter-btn" href="#">
-                Sign Up
-              </a>
-            </li>
-            <li class="navbar__item">
-              <button class="mode-btn">
-                <img
-                  src="./images/mode-logo.svg"
-                  alt="Mode button"
-                  width="32"
-                  height="32"
-                />
-              </button>
-            </li>
-          </ul>
-        </nav>
-        <button class="menu-btn">
-          <img
-            src="./images/menu.svg"
-            alt="Menu button"
-            width="28"
-            height="31"
-          />
-        </button>
-      </div>
-    </div>
-  </header>
-  <main class="site-main">
-    <h1 class="visually-hidden">Lorem ipsum dolor sit amet.</h1>
-     <section class="product">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/nomalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- <link rel="stylesheet" href="./css/min.main.css"> -->
+    <link rel="stylesheet" href="./css/customers.css" />
+    <title>Product</title>
+  </head>
+  <body>
+    <header class="site-header">
       <div class="container">
-        <div class="product__inner">
-          <div class="product__content">
-            <div class="product__title-div">
-              <h2 class="product__title">
-                Product was Built Specifically for You
-              </h2>
-            </div>
-            <ul class="product__list">
-              <li class="product__item click">
-                <h3 class="product__name">First click tests</h3>
-                <p class="product__text">
-                  While most people enjoy casino gambling,
-                </p>
-              </li>
-              <li class="product__item design">
-                <h3 class="product__name">Design surveys</h3>
-                <p class="product__text">
-                  Sports betting, lottery and bingo playing for the fun
-                </p>
-              </li>
-              <li class="product__item preference">
-                <h3 class="product__name">Preference tests</h3>
-                <p class="product__text">
-                  The Myspace page defines the individual.
-                </p>
-              </li>
-              <li class="product__item time">
-                <h3 class="product__name">Five second tests</h3>
-                <p class="product__text">
-                  Personal choices and the overall personality of the person.
-                </p>
-              </li>
-            </ul>
-            <a class="product__link main-btn" href="#">sign up now</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  
-    <section class="status">
-      <div class="container">
-        <div class="status__inner">
-          <div class="status__texts">
-            <h2 class="status__title">
-              Join 100 Compannies who boost their business with <br />
-              Product
-            </h2>
-            <a class="status__link main-btn" href="#">Get This</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="site-footer footer">
-    <div class="container">
-      <div class="footer__inner">
-        <div class="footer__links">
-          <a class="footer__logo-link logo-link" href="./index.html">
+        <div class="site-header__inner">
+          <a class="logo" href="./index.html">
             <img
-              class="logo-link__pic"
-              src="./images/footer-site-logo.svg"
+              class="logo__img"
+              src="./images/logo.svg"
               alt="Site logo"
-              width="163"
-              height="29"
+              width="162"
+              height="30"
             />
           </a>
-          <ul class="footer__social social">
-            <li class="social__item">
-              <a class="social__link" href="#">
+          <nav class="navbar">
+            <ul class="navbar__list">
+              <li class="navbar__item">
+                <a class="navbar__link" href="./index.html"> Product </a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link navbar__link--active" href="#">
+                  Customers
+                </a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="./pricing.html"> Pricing </a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="#"> Resources </a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link main-btn login-btn" href="#">
+                  Sign In
+                </a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link main-btn regiter-btn" href="#">
+                  Sign Up
+                </a>
+              </li>
+              <li class="navbar__item">
+                <button class="mode-btn">
+                  <img
+                    src="./images/mode-logo.svg"
+                    alt="Mode button"
+                    width="32"
+                    height="32"
+                  />
+                </button>
+              </li>
+            </ul>
+          </nav>
+          <button class="menu-btn">
+            <img
+              src="./images/menu.svg"
+              alt="Menu button"
+              width="28"
+              height="31"
+            />
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="site-main">
+      <h1 class="visually-hidden">Lorem ipsum dolor sit amet.</h1>
+      <section class="clients">
+        <div class="container">
+          <div class="clients__inner">
+            <h2 class="clients__title">Our Clients</h2>
+            <ul class="clients__list">
+              <li class="clients__item">
                 <img
-                  class="social__img"
-                  src="./images/instagram.svg"
-                  alt="Instagram logo"
-                  width="40"
-                  height="40"
+                  class="clients__pic"
+                  width="159"
+                  height="50"
+                  src="./images/airbnb-logo.svg"
+                  alt="logo"
                 />
-              </a>
+              </li>
+              <li class="clients__item">
+                <img
+                  class="clients__pic"
+                  width="146"
+                  height="50"
+                  src="./images/google-logo.svg"
+                  alt="logo"
+                />
+              </li>
+              <li class="clients__item">
+                <img
+                  class="clients__pic"
+                  width="213"
+                  height="44"
+                  src="./images/microsoft-logo.svg"
+                  alt="logo"
+                />
+              </li>
+              <li class="clients__item">
+                <img
+                  class="clients__pic"
+                  width="140"
+                  height=""
+                  src="./images/fedex-logo.svg"
+                  alt="logo"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="product">
+        <div class="container">
+          <div class="product__inner">
+            <div class="product__content">
+              <div class="product__title-div">
+                <h2 class="product__title">Why Choose Product?</h2>
+              </div>
+              <ul class="product__list">
+                <li class="product__item click">
+                  <h3 class="product__name">Special Business</h3>
+                  <div class="product__text-inner">
+                    <p class="product__text">
+                      Product helps you see how many more days you need to work
+                      to reach your financial goal for the month and year.
+                    </p>
+                  </div>
+                </li>
+                <li class="product__item design">
+                  <h3 class="product__name">Instant Result</h3>
+                  <div class="product__text-inner">
+                    <p class="product__text">
+                      Product helps you see how many more days you need to work
+                      to reach your financial goal for the month and year.
+                    </p>
+                  </div>
+                </li>
+                <li class="product__item time">
+                  <h3 class="product__name">Fastest way to organize</h3>
+                  <div class="product__text-inner">
+                    <p class="product__text">
+                      Product helps you see how many more days you need to work
+                      to reach your financial goal for the month and year.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 
+      <section class="status">
+        <div class="container">
+          <div class="status__inner">
+            <div class="status__texts">
+              <h2 class="status__title">
+                Join 100 Compannies who boost their business with <br />
+                Product
+              </h2>
+              <a class="status__link main-btn" href="#">Get This</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="steps">
+        <div class="container">
+          <div class="steps__inner">
+            <h2 class="steps__title">How Product Work?</h2>
+            <ul class="steps__list">
+              <li class="steps__item">
+                <img
+                  class="steps__pic"
+                  width="500"
+                  height="280"
+                  src="./images/step-1-mac.png"
+                  alt="Mac laptop image"
+                />
+                <div class="steps__content">
+                  <h3 class="steps__name">Apply for a product</h3>
+                  <p class="steps__text">
+                    Completing our easy step-by-step application form gives you
+                    access to multiple business with multiple products. We
+                    analyse your business through our proprietary credit
+                    analysis technology
+                  </p>
+                </div>
+              </li>
+              <li class="steps__item">
+                <img
+                  class="steps__pic"
+                  width="500"
+                  height="280"
+                  src="./images/step-2-mac.png"
+                  alt="Mac laptop image"
+                />
+                <div class="steps__content">
+                  <h3 class="steps__name">Pay fully refundable</h3>
+                  <p class="steps__text">
+                    Product will contactting you instantly to receive payment of
+                    the Application Fee. if no offer of product is available,
+                    your fee will be fully refunded.
+                  </p>
+                </div>
+              </li>
+              <li class="steps__item">
+                <img
+                  class="steps__pic"
+                  width="500"
+                  height="280"
+                  src="./images/step-3-mac.png"
+                  alt="Mac laptop image"
+                />
+                <div class="steps__content">
+                  <h3 class="steps__name">Completion</h3>
+                  <p class="steps__text">
+                    Product will continue to liase between borrower and manager
+                    to procees and complete a quick and efficient settlement
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <a class="steps__link main-btn" href="#">Get in touch with us</a>
+          </div>
+        </div>
+      </section> -->
+    </main>
+    <footer class="site-footer footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__links">
+            <a class="footer__logo-link logo-link" href="./index.html">
+              <img
+                class="logo-link__pic"
+                src="./images/footer-site-logo.svg"
+                alt="Site logo"
+                width="163"
+                height="29"
+              />
+            </a>
+            <ul class="footer__social social">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img
+                    class="social__img"
+                    src="./images/instagram.svg"
+                    alt="Instagram logo"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img
+                    class="social__img"
+                    src="./images/facebook.svg"
+                    alt="Facebook logo"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img
+                    class="social__img"
+                    src="./images/twitter.svg"
+                    alt="Twitter logo"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <strong class="footer__strong">Resource</strong>
             </li>
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <img
-                  class="social__img"
-                  src="./images/facebook.svg"
-                  alt="Facebook logo"
-                  width="40"
-                  height="40"
-                />
-              </a>
+            <li class="footer__item">
+              <a class="footer__link" href="#">About Us</a>
             </li>
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <img
-                  class="social__img"
-                  src="./images/twitter.svg"
-                  alt="Twitter logo"
-                  width="40"
-                  height="40"
-                />
-              </a>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Blog</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Contact</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">FAQ</a>
             </li>
           </ul>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <strong class="footer__strong">Legal Stuff</strong>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Disclaimer</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Financing</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Privacy Policy</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Terms of Service</a>
+            </li>
+          </ul>
+          <form
+            class="footer__form"
+            action="https://echo.htmlacademy.ru"
+            method="post"
+            autocomplete="on"
+          >
+            <h2 class="footer__title">
+              knowing you're always on the best energy deal.
+            </h2>
+            <input
+              class="footer__input"
+              type="text"
+              name="message"
+              placeholder="Enter your message"
+            />
+            <button class="footer__submit-btn main-btn" type="submit">
+              Sign up Now
+            </button>
+          </form>
         </div>
-        <ul class="footer__list">
-          <li class="footer__item">
-            <strong class="footer__strong">Resource</strong>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">About Us</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">Blog</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">Contact</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">FAQ</a>
-          </li>
-        </ul>
-        <ul class="footer__list">
-          <li class="footer__item">
-            <strong class="footer__strong">Legal Stuff</strong>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">Disclaimer</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">Financing</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">Privacy Policy</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">Terms of Service</a>
-          </li>
-        </ul>
-        <form
-          class="footer__form"
-          action="https://echo.htmlacademy.ru"
-          method="post"
-          autocomplete="on"
-        >
-          <h2 class="footer__title">
-            knowing you're always on the best energy deal.
-          </h2>
-          <input
-            class="footer__input"
-            type="text"
-            name="message"
-            placeholder="Enter your message"
-          />
-          <button class="footer__submit-btn main-btn" type="submit">
-            Sign up Now
-          </button>
-        </form>
+        <div class="footer__small-box">
+          <small class="footer__small"
+            >Made With Love By Figmaland All Right Reserved</small
+          >
+        </div>
       </div>
-      <div class="footer__small-box">
-        <small class="footer__small"
-          >Made With Love By Figmaland All Right Reserved</small
-        >
-      </div>
-    </div>
-  </footer>
-  <script src="./js/main.js"></script>
-</body>
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
 </html>

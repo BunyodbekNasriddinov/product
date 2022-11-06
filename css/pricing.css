@@ -343,15 +343,8 @@ img {
   color: var(--main-text-color);
 }
 
-.input-btn:checked ~ .questions__item::before {
-  content: "";
-  width: 24px;
-  height: 24px;
-  display: inline-block;
-  margin-right: 16px;
+.questions__item input:checked ~ .questions__item::before {
   background-image: url("../../images/minus-circle.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .input-btn:checked ~ .questions__text {

@@ -226,7 +226,6 @@ body {
 .hero__content {
   width: 100%;
   max-width: 450px;
-  margin: 0 auto;
 }
 
 .hero__title {
@@ -289,6 +288,10 @@ body {
     padding: 350px 0 115px;
     background-position: top center;
     background-size: 338px 310px;
+  }
+
+  .hero__content {
+    margin: 0 auto;
   }
 
   .hero__title {
@@ -1477,6 +1480,11 @@ body {
   line-height: 30px;
   color: #02897a;
   background-color: #ffffff;
+  text-decoration: none;
+}
+
+.status__link:hover {
+  color: #6cffee;
 }
 
 /*******************************/
